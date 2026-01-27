@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import './App.css';
 export default class CourseCard extends Component {
   render() {
         const {data} = this.props;
