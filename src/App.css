@@ -34,8 +34,10 @@ body{
   box-shadow: 2px 2px 10px gray;
   padding: 20px;
   margin: 20px;
-  width: 300px;
+  width: 400px;
   color: white;
+  position: relative;
+  overflow: visible;  /* allow image to pop out */
 }
 
 .coursecard:hover{
@@ -45,4 +47,30 @@ body{
   background : url(MidnightCity.jpg);
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+
+.Section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  justify-items: center;
+  gap: 5px;
+  padding: 40px;
+}
+@media (max-width: 700px) {
+  .Section {
+    grid-template-columns: 1fr; /* 1 card per row on smaller screens */
+  }
+}
+
+
+.coursecard img {
+  width: 120%;           /* slightly bigger than card */
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  position: relative;
+        
+  
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
