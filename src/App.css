@@ -38,8 +38,8 @@ body{
 
 .coursecard{
   background: linear-gradient(to right,
-  rgb(56, 74, 88),
-  rgb(207, 203, 198)
+  rgb(56, 76, 92),
+  rgb(175, 173, 170)
   );
   border-radius: 10px;
   box-shadow: 2px 2px 10px gray;
